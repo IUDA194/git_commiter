@@ -23,6 +23,8 @@ def main():
 
     repo.index.add(repo.untracked_files + changed_files)
 
+    print("Your`s commit name is : ", commit_name)
+
     repo.index.commit(commit_name)
     
 if __name__ == "__main__":
